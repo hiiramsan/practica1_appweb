@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-body{
+* {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    
+}
+
+body {
     background-color: #EFE4CE;
     color: #021B2E;
     font-size: 16px;
@@ -8,18 +15,11 @@ body{
 a{
     text-decoration: none;
 }
-*{
-    
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    
-}
 
 h1{
     font-family: "Playfair Display";
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 nav{
@@ -27,10 +27,25 @@ nav{
     color: #F9F9EF;
     width: 90%;
     margin: auto;
+    margin-top: 2.5rem;
     max-width: 1800px;
-    padding: 0.9rem 2rem;
+    padding: 0.9rem 3rem;
     display: flex;
     border-radius: 3rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-btns {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    width: auto;
+    margin: 0 4rem;
 }
 
 .logo{
@@ -38,7 +53,7 @@ nav{
     font-weight: 800;
 }
 
-nav>a{
+nav > a{
     color: #12BA9C;
     text-decoration: none;
 }
@@ -51,16 +66,25 @@ nav>ul a{
     text-decoration: none;
 }
 
+nav li {
+    margin-right: 3rem;
+}
+
 header{
     width: 95%;
     margin: auto;
     max-width: 1800px;
+    height: 80vh;
 }
 header div{
     width: 40%;
 }
+
 header img{
-    width: 60%;
+    width: 50%;
+    position: absolute;
+    top: 4rem;
+    right: 10rem;
     
 }
 header a{
@@ -80,5 +104,157 @@ header a{
     padding: 0.9rem 1.5rem;
     text-decoration: none;
     border-radius: 1.5rem 1.5rem;
+}
 
+.card {
+    background-color: #FAF9EF;
+    border-radius: 1rem;
+}
+
+.card-vertical {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-vertical > img {
+    width: 100px;
+}
+
+.card-horizontal {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 2rem 0;
+}
+
+.booking form {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking .inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.booking input {
+    background-color: #efeace;
+    border-color: #ada6a2;
+    border: 2px solid #000;
+    padding: 1.3rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.booking input[type="submit"] {
+    background-color: #14ba9c;
+    border-style: none;
+    color: #EFE4CE;
+    cursor: pointer;
+}
+
+section#food-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+#food-categories .categories {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#protocol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+#protocol h3 {
+    color: #12BA9C;
+    margin-bottom: 0;
+}
+
+#protocol h2 {
+    color: #021B2E;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    font-family: "Playfair Display";
+    font-weight: 800;
+}
+
+#chef {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#chef img {
+    width: 40rem;
+}
+
+#chef .container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem  4rem;
+}
+
+.subtitle {
+    color: #FF5710;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.title {
+    color: #021B2E;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    font-family: "Playfair Display";
+    font-weight: 800;
+}
+
+#chef h3 {
+    color: #12BA9C;
+    margin-bottom: 0;
+}
+
+#chef h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+
+}
+
+#chef p {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 60%;
+}
+
+#customers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
