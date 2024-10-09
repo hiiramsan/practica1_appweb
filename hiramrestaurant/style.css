@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-body{
+* {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+body {
     background-color: #EFE4CE;
     color: #021B2E;
     font-size: 16px;
@@ -8,18 +14,11 @@ body{
 a{
     text-decoration: none;
 }
-*{
-    
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    
-}
 
 h1{
     font-family: "Playfair Display";
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 nav{
@@ -27,10 +26,26 @@ nav{
     color: #F9F9EF;
     width: 90%;
     margin: auto;
+    margin-top: 2.5rem;
     max-width: 1800px;
-    padding: 0.9rem 2rem;
+    padding: 0.9rem 3rem;
     display: flex;
     border-radius: 3rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-btns {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    width: auto;
+    margin: 0 4rem;
 }
 
 .logo{
@@ -38,10 +53,16 @@ nav{
     font-weight: 800;
 }
 
-nav>a{
+nav > a{
     color: #12BA9C;
     text-decoration: none;
 }
+
+nav a:hover{
+    color: #FF5710;
+    cursor: pointer;
+}
+
 nav ul{
     list-style-type: none;
     display: flex;
@@ -51,16 +72,29 @@ nav>ul a{
     text-decoration: none;
 }
 
+nav li {
+    margin-right: 3rem;
+}
+nav img {
+    width: 10rem;
+}
+
 header{
     width: 95%;
     margin: auto;
     max-width: 1800px;
+    height: 80vh;
 }
 header div{
     width: 40%;
 }
+
 header img{
-    width: 60%;
+    width: 50%;
+    position: absolute;
+    top: 4rem;
+    right: 10rem;
+    z-index: -1000;
     
 }
 header a{
@@ -80,5 +114,362 @@ header a{
     padding: 0.9rem 1.5rem;
     text-decoration: none;
     border-radius: 1.5rem 1.5rem;
+}
 
+.button:hover {
+    background-color: #fff;
+    transition: 0.3s ease;
+    color: #000;
+    border: 1px solid #000; 
+}
+
+.card {
+    background-color: #FAF9EF;
+    border-radius: 1rem;
+}
+
+.card-vertical {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-vertical > img {
+    width: 100px;
+}
+
+.card-horizontal {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 2rem 0;
+}
+
+.booking form {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking .inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.booking input {
+    background-color: #efeace;
+    border-color: #ada6a2;
+    border: 2px solid #000;
+    padding: 1.3rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.booking input[type="submit"] {
+    background-color: #14ba9c;
+    border-style: none;
+    color: #EFE4CE;
+    cursor: pointer;
+    border: 1px solid #14ba9c;
+}
+
+.booking input[type="submit"]:hover {
+    background-color: #fff;
+    transition: 0.3s ease;
+    color: #000;
+    border: 1px solid #000;
+}
+
+section#food-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+#food-categories .categories {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#protocol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+#protocol h3 {
+    color: #12BA9C;
+    margin-bottom: 0;
+}
+
+#protocol h2 {
+    color: #021B2E;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    font-family: "Playfair Display";
+    font-weight: 800;
+}
+
+#chef {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#chef img {
+    width: 40rem;
+}
+
+#chef .container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem  4rem;
+}
+
+.subtitle {
+    color: #FF5710;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.title {
+    color: #021B2E;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    font-family: "Playfair Display";
+    font-weight: 800;
+}
+
+#chef h3 {
+    color: #12BA9C;
+    margin-bottom: 0;
+}
+
+#chef h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+
+}
+
+#chef p {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 60%;
+}
+
+#customers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.customer-card {
+    border-radius: 2rem;
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 32rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 2rem 0;
+}
+
+.customer-card h4 {
+    color: #021B2E;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-family: "Playfair Display";
+    font-weight: 800;
+}
+
+.customer-card span {
+    color: #ada6a2;
+}
+
+.customer-card .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2rem;
+    margin-bottom: 0;
+}
+
+.customer-card img {
+    width: 8rem;
+}
+
+#customers .customers-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
+
+#customers .customers-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
+
+.checked {
+    color: orange !important;
+  }
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;    
+}
+
+#contact form input, textarea{
+    background-color: #D1C09E;
+    opacity: 1;
+    text-transform: uppercase;
+    color: #000;
+    border: 2px solid #fff;
+    padding: 1.5rem;
+    width: 40rem;
+    border-radius: 2rem;
+}
+
+#contact form input[type="submit"] {
+    background-color: #14ba9c;
+    color: #EFE4CE;
+    cursor: pointer;
+    color: #000;
+    padding: 1rem 0;
+    width: 12rem;
+    border: 2px solid #14ba9c;
+}
+
+#contact form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid #000;
+}
+
+footer {
+    background-color: #D5A021;
+    width: 100%;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: #fff;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    font-family: "Playfair Display";
+    font-weight: 800;
+}
+
+footer ul {
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+footer li {
+    list-style-type: none;
+    margin: 2rem 0;
+}
+
+footer a {
+    color: #021B2E;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+footer img {
+    width: 3.5rem;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    border-radius: 50%;
+    border: 0.2rem solid #fff;
+}
+
+footer img:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 0.2rem solid #000;
+}
+
+footer input[type="email"] {
+    background-color: transparent;
+    opacity: 1;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1rem;
+    width: 12rem;
+    border-radius: 2rem 0 0 2rem;
+    margin-bottom: 1rem;
+}
+
+footer input[type="email"]::placeholder {
+    color: #fff;
+}
+
+footer input[type="submit"] {
+    background-color: #14ba9c;
+    border-style: none;
+    color: #EFE4CE;
+    cursor: pointer;
+    color: #000;
+    padding: 1rem;
+    text-transform: uppercase;
+    width: 8rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+footer input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
