@@ -4,6 +4,7 @@
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
+    scroll-behavior: smooth;
 }
 
 body {
